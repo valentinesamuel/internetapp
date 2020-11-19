@@ -25,6 +25,7 @@ class _HomePageState extends State<HomePage> {
   Future fetchData() async {
     http.Response response;
     response = await http.get(
+            //here, i hard coded lagos into the api
         'http://api.openweathermap.org/data/2.5/weather?q=lagos&appid=e9ea363e3bfda4c6f78c96f8984940a8');
     try {
       if (response.statusCode == 200) {
